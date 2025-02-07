@@ -16,7 +16,6 @@ import avionPapelVector from "../../assets/lotties/avionPapelVector.json";
 import Lottie from "react-lottie";
 import ReCAPTCHA from "react-google-recaptcha";
 import { Country } from "../../utils/types/countries";
-import { useNavigate } from "react-router-dom";
 
 export default function FormularioContacto({
   header = "Contáctanos",
@@ -123,9 +122,6 @@ export default function FormularioContacto({
     }
   }
 
-
-  const navigate = useNavigate();
-
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
@@ -155,7 +151,7 @@ export default function FormularioContacto({
       .then(() => {
         setIsSended(true);
         setSending(false);
-        navigate("/gracias")
+        window.location.href = "/gracias";
       })
       .catch((error) => {
         console.error(error);
