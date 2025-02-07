@@ -1,0 +1,73 @@
+.cookies{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem 0;
+    background: #002C58;
+    z-index: 100;
+    opacity: 1;
+    transition: .8s ease-in-out all;
+}
+
+.cookies.background{
+    background: transparent !important;
+}
+
+.cookies a:hover{
+    text-decoration: underline;    
+}
+.cookies a{
+    text-decoration: none;
+    color: #36A9E1;
+}
+
+.cookies h1{
+    font-size: 2.1rem;
+}
+
+.cookies button{
+    height: fit-content;
+}
+
+.cookies .containerimg{
+    position: fixed;
+    bottom:0;
+    right: 0;
+}
+
+.cookies .canvas{
+    position: absolute;
+    width: 300px;
+    top: -300%;
+    left: -20px;
+}
+
+.containerimg img{
+    height: fit-content;
+}
+
+.galletita{
+     
+    transform: translateY(100%)
+}
+
+.cookies .btn-white:hover{
+    background: var(--yellow);
+    color: var(--darkBlue)
+}
+.cookies .btn-white{
+    min-width: 220px;
+    display: flex;
+    justify-content: center;
+}
+
+.cookies .buttons button{
+    margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+    .cookies .btn-outline-primary{
+        width: fit-content;
+        
+    }
+}
