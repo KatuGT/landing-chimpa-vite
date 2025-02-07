@@ -74,7 +74,7 @@ const Video = ({ srcMp4, srcwebm, poster }: VideoProps) => {
       <img
         alt="poster de video"
         src={poster}
-        className=" h-full w-full object-cover sm:hidden absolut inset-0"
+        className=" h-full w-full object-cover sm:hidden absolute inset-0"
       />
       <video
         ref={videoRef}

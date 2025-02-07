@@ -16,6 +16,7 @@ import avionPapelVector from "../../assets/lotties/avionPapelVector.json";
 import Lottie from "react-lottie";
 import ReCAPTCHA from "react-google-recaptcha";
 import { Country } from "../../utils/types/countries";
+import { useNavigate } from "react-router-dom";
 
 export default function FormularioContacto({
   header = "Contáctanos",
@@ -122,6 +123,9 @@ export default function FormularioContacto({
     }
   }
 
+
+  const navigate = useNavigate();
+
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
@@ -135,7 +139,7 @@ export default function FormularioContacto({
       honeypot: honeypot,
       phone: selectedCountry.phone_code + formData.telefono,
       "g-recaptcha-response": recaptacha,
-      // redirect: params?.meta ? params?.meta : "-",
+      redirect: "-",
     };
     setSending(true);
     axios
@@ -151,7 +155,7 @@ export default function FormularioContacto({
       .then(() => {
         setIsSended(true);
         setSending(false);
-        // route.push("/gracias");
+        navigate("/gracias")
       })
       .catch((error) => {
         console.error(error);
