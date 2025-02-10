@@ -1,7 +1,8 @@
  
 import  { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import FormularioContacto from "./formularioContacto/FormularioContacto";
+// import FormularioContacto from "./formularioContacto/FormularioContacto";
+import FormularioBrevo from "./formularioContacto/FormularioBrevo";
 const DURATION = 0.25;
 
 const Hero = () => {
@@ -115,7 +116,7 @@ const Hero = () => {
             duration: DURATION * 2,
             ease: "easeInOut",
           }}
-          className="relative h-full rounded-[20px] border-b-white fill-white px-5 py-10 text-white placeholder:text-azul lg:aspect-[570/780]  lg:border-b-azul lg:bg-white lg:fill-azul lg:px-12 lg:text-azul"
+          className="relative h-full rounded-[20px] border-b-white fill-white px-5 py-10 text-white placeholder:text-azul   lg:border-b-azul lg:bg-white lg:fill-azul lg:px-12 lg:text-azul"
         >
           <h2 className="mx-auto hidden max-w-[24ch] text-center text-[20px] font-thin lg:block">
             Agencia de{" "}
@@ -124,7 +125,8 @@ const Hero = () => {
               Diseño y Desarrollo de Páginas Web{" "}
             </strong>
           </h2>
-          <FormularioContacto header="Hablemos de tu proyecto" section="hero" />
+          {/* <FormularioContacto header="Hablemos de tu proyecto" section="hero" /> */}
+          <FormularioBrevo/>
         </motion.div>
       </div>
     </header>
