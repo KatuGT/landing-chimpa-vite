@@ -1,4 +1,4 @@
-import "./../../brevo-form.css"
+import "./../../brevo-form.css";
 
 const FormularioBrevo = () => {
   return (
@@ -83,7 +83,7 @@ const FormularioBrevo = () => {
             <form
               id="sib-form"
               method="POST"
-              action="https://3031bcf3.sibforms.com/serve/MUIFAMt5uMBmEcYlEp0bL1d0Y5WS8tYKjiULvXftua8WGVIgCi0pULfW162c_HIN0GSWe1Q_fAz2-dw78dKjqT9HCy5kJs_dn2kXKVq50WB0UQeoRd7TCJNnjFzZgW-G93u2k5S4mTove_vLsZTutiZqRwkLSoEXOIpKLK9uOGSoefseMprQtPKDnOPydUvVdVBIzYqBPVNx9PlL"
+              action="https://3031bcf3.sibforms.com/serve/MUIFAC1Shp_gQYTuzQZDFVeXYQfqwGWsZaoiOEI6_gBhLsTwOij9k-8_WInNN_X-ODfc9WukjDUHUH6VQwyAJSSlo1nzLN5AjNYiKyhdqWRO5ESwwF2oVVmzUhIxUZ8btvrM1bFa6rbBd8ls6hce6oqgvzUMZBDDXyJEFGQ7N05V6XpUQA9EeTD4jTOx6Pdz0fQGoRSTjCqRc-MV"
               data-type="subscription"
             >
               <div style={{ padding: "8px 0" }}>
